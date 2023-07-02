@@ -10,6 +10,11 @@ from sklearn.metrics import roc_curve, roc_auc_score
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 from sklearn.metrics import accuracy_score
+# https://github.com/DistrictDataLabs/yellowbrick/issues/1137
+try:
+    from sklearn.utils import _param_validation
+except ImportError:
+    from sklearn.utils import param_validation
 from imblearn.over_sampling import SMOTE
 
 
