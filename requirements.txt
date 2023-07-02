@@ -3,7 +3,7 @@ numpy
 pandas
 openpyxl
 matplotlib
-imblearn
+imbalanced-learn
 scikit-learn
 seaborn
 plotly
